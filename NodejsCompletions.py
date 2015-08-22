@@ -366,7 +366,9 @@ compNodejs = [
 ("zlib.unzip(buffer, callback)\tzlib","zlib.unzip(${1:buffer}, ${2:callback})$0"),
 ("zlib.inflate(buffer, callback)\tzlib","zlib.inflate(${1:buffer}, ${2:callback})$0"),
 ("zlib.gunzip(buffer, callback)\tzlib","zlib.gunzip(${1:buffer}, ${2:callback})$0"),
-("zlib.inflateRaw(buffer, callback)\tzlib","zlib.inflateRaw(${1:buffer}, ${2:callback})$0")
+("zlib.inflateRaw(buffer, callback)\tzlib","zlib.inflateRaw(${1:buffer}, ${2:callback})$0"),
+("log\tnode","console.log($1)"),
+("exports\tnode","module.exports")
 ]
 
 compAll = list(compNodejs)      # could use different lists

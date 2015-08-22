@@ -3,14 +3,16 @@ import sublime, sublime_plugin
 compJS = [
     ("Events\tBackbone", "Backbone.Events"),
     ("Model\tBackbone", "Backbone.Model.extend({\n  $1\n})"),
-    ("Collection\tBackbone", "Backbone.Collection.extend({\n  initialize: function(models,options) {\n  $1\n  }\n})"),
-    ("View\tBackbone", "Backbone.View.extend({\n  el:$1 ,\n  initialize: function() {\n  \n  },\n  events:{\n  $1\n  }\n})"),
+    ("Collection\tBackbone", "Backbone.Collection.extend({model:$1})"),
+    ("View\tBackbone", "Backbone.View.extend({\n  el:$1 ,\n  initialize: function() {\n  \n  },\n  events:{\n  \n  }\n})"),
     ("initialize\tBackbone", "initialize: function() {\n  $1\n}"),
     ("defaults\tBackbone", "defaults:{\n  $1\n}"),
     ("fetch\tBackbone", "fetch({\n   success: function(collection, response, options) {\n        $1\n    },\n    error: function(collection, response, options) {\n      \n  }\n});"),
     ("Router\tBackbone", "Backbone.Router.extend({\n  $1\n})"),
     ("routes\tBackbone", "routes:{\n  $1\n}"),
-    ("start\tBackbone.history","start()")
+    ("start\tBackbone.history","start()"),
+    ("JSON.stringify()","JSON.stringify()"),
+    ("render\tBackbone","render:{\n  $1\n}")
 ]
 
 compAll = list(compJS)      # could use different lists
