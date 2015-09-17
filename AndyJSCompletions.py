@@ -215,7 +215,7 @@ compJS = [
     ("concat()\tArray", "concat(${1:values})$0"),
     ("every()\tArray", "every(${1:testfunction}${2:[, thisobj]})$0"),
     ("filter()\tArray", "filter(${1:testfunction}${2:[, thisobj]})$0"),
-    ("foreach()\tArray", "foreach(${1:testfunction}${2:[, thisobj]})$0"),
+    ("forEach()\tArray", "foreach(${1:testfunction}${2:[, thisobj]})$0"),
     ("indexOf()\tArray", "indexOf(${1:targetElement}${2:[, startIndex]})$0"),
     ("join()\tArray", "join(${1:separator})$0"),
     ("lastIndexOf()\tArray", "lastIndexOf(${1:targetElement}${2:[, startIndex]})$0"),

@@ -1,16 +1,33 @@
 import sublime, sublime_plugin
 
 compJS = [
-    ("Events\tBackbone", "Backbone.Events"),
-    ("Model\tBackbone", "Backbone.Model.extend({\n  $1\n})"),
-    ("Collection\tBackbone", "Backbone.Collection.extend({\n  initialize: function(models,options) {\n  $1\n  }\n})"),
-    ("View\tBackbone", "Backbone.View.extend({\n  el:$1 ,\n  initialize: function() {\n  \n  },\n  events:{\n  $1\n  }\n})"),
-    ("initialize\tBackbone", "initialize: function() {\n  $1\n}"),
-    ("defaults\tBackbone", "defaults:{\n  $1\n}"),
-    ("fetch\tBackbone", "fetch({\n   success: function(collection, response, options) {\n        $1\n    },\n    error: function(collection, response, options) {\n      \n  }\n});"),
-    ("Router\tBackbone", "Backbone.Router.extend({\n  $1\n})"),
-    ("routes\tBackbone", "routes:{\n  $1\n}"),
-    ("start\tBackbone.history","start()")
+    ("req.params\treq", "req.params"),
+    ("req.query\treq", "req.query"),
+    ("req.body\treq", "req.body"),
+    ("req.route\treq", "req.route"),
+    ("req.cookies\treq", "req.cookies"),
+    ("req.singnedCookies\treq", "req.singnedCookies"),
+    ("req.accepts\treq", "req.accepts($1)"),
+    ("req.ip\treq", "req.ip"),
+    ("req.path\treq", "req.path"),
+    ("req.host\treq", "req.host"),
+    ("req.xhr\treq", "req.xhr"),
+    ("req.protocol\treq", "req.protocol"),
+    ("req.secure\treq", "req.secure"),
+    ("req.url\treq", "req.url"),
+    ("req.originalUrl\treq", "req.originalUrl"),
+    ("req.acceptedLanguages\treq", "req.acceptedLanguages"),
+    ("formdata\tContent-Type", "application/x-www-form-urlendcoded"),
+    ("json\tContent-Type", "application/json"),
+    ("res.status\tres", "res.status(${1:code})"),
+    ("res.redirect\tres", "res.redirect(${1:url})"),
+    ("res.send\tres", "res.send(${1:body})"),
+    ("res.jsonp\tres", "res.jsonp(${1:json})"),
+    ("res.json\tres", "res.json(${1:json})"),
+    ("res.type\tres", "res.type(${1:type})"),
+    ("res.sendFile\tres", "res.sendFile(${1:path,[option],[callback]})"),
+    ("res.format\tres", "res.format(${1:object})"),
+    ("res.render\tres", "res.render(${1:view,callback})"),
 ]
 
 compAll = list(compJS)      # could use different lists
