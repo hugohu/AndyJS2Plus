@@ -145,7 +145,7 @@ compNodejs = [
 ("dns.resolve(domain, type_, callback_)\tdns","dns.resolve(${1:domain}, ${2:type_}, ${3:callback_})$0"),
 ("events.EventEmitter()\tevents","events.EventEmitter()$0"),
 ("freelist.FreeList(name, max, constructor)\tfreelist","freelist.FreeList(${1:name}, ${2:max}, ${3:constructor})$0"),
-("fs.Stats()\tfs","fs.Stats()$0"),
+("fs.stat()\tfs","fs.stat()$0"),
 ("fs.readFile(path, encoding_)\tfs","fs.readFile(${1:path}, ${2:encoding_})$0"),
 ("fs.readFileSync(path, encoding)\tfs","fs.readFileSync(${1:path}, ${2:encoding})$0"),
 ("fs.close(fd, callback)\tfs","fs.close(${1:fd}, ${2:callback})$0"),
